@@ -1,0 +1,30 @@
+:root {
+    --clr-bg: #ffffff;
+    --clr-text: #222222;
+}
+
+/*ハンバーガーメニュー*/
+.header__toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.header__toggle-bar {
+    width: 20px;
+    height: 2px;
+    background-color: #222222;
+    display: block;
+}
+
+
+.logo {
+    text-align: center;
+}
+
+.footer__text {
+    text-align: center;
+}
