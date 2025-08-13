@@ -4,22 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>合同会社Canvas</Canvas></title>
+    <title>合同会社Canvas</title>
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <h1 class="logo">Canvas</h1>
         <!--ハンバーガーメニューのアイコン-->
-        <button class="header__toggle">
+        <button class="header__toggle" aria-label="メニューを開く" aria-expanded="false">
             <span class="header__toggle-bar"></span>
             <span class="header__toggle-bar"></span>
             <span class="header__toggle-bar"></span>
         </button>
         <nav>
-            <ul>
-                <li><a href="#">iroiro広島</a></li>
-                <li><a href="#">学校探究</a></li>
+            <ul class="nav__list">
+                <li><a href="#">NEWS</a></li>
+                <li><a href="#">リリース</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#iroiro">iroiro広島</a></li>
+                <li><a href="#gakko">学校探究</a></li>
                 <li><a href="#">保護者様へ</a></li>
                 <li><a href="#">企業様へ</a></li>
                 <li><a href="#">学校様へ</a></li>
@@ -29,33 +32,101 @@
     </header>
 
     <main>
-        <section id="slide-show section">
-            <div class="slide-show-container"></div>
+        <section id="hero">
+            <div class="slide-show-container">
                 <div class="slide-show-item">
-                    <img src="img/slide-show-1.jpg" alt="slide-show-1">
+                    <img src="images/test1.jpg" alt="slide-show-1">
                 </div>
                 <div class="slide-show-item">
-                    <img src="img/slide-show-2.jpg" alt="slide-show-2">
+                    <img src="images/test2.jpg" alt="slide-show-2">
                 </div>
                 <div class="slide-show-item">
-                    <img src="img/slide-show-3.jpg" alt="slide-show-3">
+                    <img src="images/test3.jpg" alt="slide-show-3">
                 </div>
             </div>
+
+            <nav class="hero__dots" aria-label="ページネーション">
+                <a href="#" aria-label="1枚目へ" class="hero__dot">●</a>
+                <a href="#" aria-label="2枚目へ" class="hero__dot">●</a>
+                <a href="#" aria-label="3枚目へ" class="hero__dot">●</a>
+            </nav>
         </section>
 
-        <section id="vision section">
+        <section id="audience">
+            <h2>対象別のご案内</h2>
+            <div class="audience__container">
+                <article class="audience__item">
+                    <h3 class="audience__heading">企業様へ</h3>
+                    <p class="audience__text">企業向け説明文ダミー。採用・研修・地域連携での協働をご検討の方向け。</p>
+                    <!-- 後で href を詳細ページ or LP内アンカーに差し替え -->
+                    <a class="audience__link" href="#">詳しく見る</a>
+                </article>
+
+                <article class="audience__item">
+                    <h3 class="audience__heading">学校様へ</h3>
+                    <p class="audience__text">学校向け説明文ダミー。探究・出前授業・PBL伴走の導入をご検討の方向け。</p>
+                    <a class="audience__link" href="#">詳しく見る</a>
+                </article>
+
+                <article class="audience__item">
+                    <h3 class="audience__heading">保護者様へ</h3>
+                    <p class="audience__text">保護者向け説明文ダミー。親子イベントや学びの情報をお探しの方向け。</p>
+                    <a class="audience__link" href="#">詳しく見る</a>
+                </article>
+            </div>
+
+        </section>
+
+        <section id="vision">
             <h2 class="vision__title">VISION</h2>
             <p class="vision__text">
-                ビジョンビジョンビジョンビジョンビジョンビジョンビジョンビジョンビジョンビジョンビジョンビジョンビジョンビジョンビジョンビジョン
-                ビジョンビジョンビジョンビジョンビジョンビジョンビジョンビジョンビジョンビジョンビジョンビジョンビジョンビジョンビジョンビジョン
+                子供も大人も、学びの場にもっと自由とおもしろさを。<br>
+                私たちは、学校・家庭・地域・企業がつながり合うことで、誰もが挑戦し続けられる社会を目指します。<br>
+                そのために、教育イベントや実践の場をデザインし、新しい出会いと体験を広げています。
             </p>
         </section>
 
+        <section id="iroiro">
+            <h2 class="iroiro__title">iroiro広島</h2>
+            <p class="iroiro__text">いろいろ広島でーす。</p>
+            <a href="#" class="iroiro__link">詳しく見る</a>
+        </section>
+
+
+        <section id="gakko" class="gakko">
+            <h2 class="gakko__title">学校探究</h2>
+            <p class="gakko__text">プロジェクト型学習（PBL）を通じて、生徒が自ら問いを立て学ぶ機会を提供します。（テスト文）</p>
+            <a href="#" class="gakko__link">もっと見る</a>
         </section>
     </main>
 
     <footer class="footer">
-        <p class="footer__text">Canvas</p>
+        <div class="footer__inner">
+            <div class="footer__brand">
+                <p class="footer__logo">Canvas</p>
+            </div>
+
+            <nav class="footer__nav" aria-label="フッターナビゲーション">
+                <ul class="footer__list">
+                  <li><a href="#news">NEWS</a></li>
+                  <li><a href="#release">リリース</a></li>
+                  <li><a href="#contact">CONTACT</a></li>
+                  <li><a href="#iroiro">iroiro広島</a></li>
+                  <li><a href="#gakko">学校探究</a></li>
+                  <li><a href="#about">about us</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer__contact">
+                <p>お問い合わせ</p>
+            </div>
+
+            <div class="footer__copy">
+                <small>
+                    &copy; 2025 Canvas LLC (planned)
+                </small>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
