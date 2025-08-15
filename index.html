@@ -9,7 +9,7 @@
 
 <body>
     <header class="header">
-        <h1 class="logo">Canvas</h1>
+        <h1 class="logo"><a href="index.html">Canvas</a></h1>
         <!--ハンバーガーメニューのアイコン-->
         <button class="header__toggle" aria-label="メニューを開く" aria-expanded="false">
             <span class="header__toggle-bar"></span>
@@ -17,10 +17,8 @@
             <span class="header__toggle-bar"></span>
         </button>
         <nav>
-            <ul class="nav__list">
+            <ul class="nav__list" id="globalnav">
                 <li><a href="#">NEWS</a></li>
-                <li><a href="#">リリース</a></li>
-                <li><a href="#">CONTACT</a></li>
                 <li><a href="#iroiro">iroiro広島</a></li>
                 <li><a href="#gakko">学校探究</a></li>
                 <li><a href="#">保護者様へ</a></li>
@@ -98,6 +96,13 @@
             <p class="gakko__text">プロジェクト型学習（PBL）を通じて、生徒が自ら問いを立て学ぶ機会を提供します。（テスト文）</p>
             <a href="#" class="gakko__link">もっと見る</a>
         </section>
+
+
+        <section id="about" class="about">
+            <h2 class="about__title">about us</h2>
+            <p class="about__text">教育イベントの企画・運営、探究学習の伴走、地域連携プロジェクトを行っています。現在は設立準備中として、パートナーとともに小さく早く実装しています。（テスト文）</p>
+            <a href="#" class="about__link">もっと詳しく</a>
+        </section>
     </main>
 
     <footer class="footer">
@@ -108,17 +113,17 @@
 
             <nav class="footer__nav" aria-label="フッターナビゲーション">
                 <ul class="footer__list">
-                  <li><a href="#news">NEWS</a></li>
-                  <li><a href="#release">リリース</a></li>
-                  <li><a href="#contact">CONTACT</a></li>
+                  <li><a href="./news.html">NEWS</a></li>
                   <li><a href="#iroiro">iroiro広島</a></li>
                   <li><a href="#gakko">学校探究</a></li>
-                  <li><a href="#about">about us</a></li>
+                  <li><a href="./about.html">about us</a></li>
                 </ul>
             </nav>
 
-            <div class="footer__contact">
-                <p>お問い合わせ</p>
+            <div class="footer__contact" id="contact">
+                <h2 class="contact__title">CONTACT</h2>
+                <p class="contact__text">ご相談・協業・講師依頼など、お気軽にお問い合わせください。（テスト文）</p>
+                <a href="#" class="contact__link">お問い合わせフォームを開く</a>
             </div>
 
             <div class="footer__copy">
